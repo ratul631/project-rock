@@ -17,7 +17,7 @@
         const result=getComputerChoice(move);
         
      function playRound( playerSelection, computerSelection){
-        switch (playerSelection, computerSelection){ 
+        switch (playerSelection && computerSelection){ 
             case playerSelection.toLowerCase("Rock") && computerSelection.toLowerCase("Scissors"):
             console.log("You win Rock beats Scissors")
             break;
@@ -50,7 +50,7 @@
      }
     const playerSelection="paper"
     const computerSelection = getComputerChoice(move);
-    return playRound;
+    console.log (playRound(playerSelection, computerSelection));
      </script>
 </body>
 </html>
