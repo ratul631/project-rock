@@ -8,16 +8,16 @@
 </head>
 <body>
     <script>
-        function getComputerChoice (play) {
-            const randomIndex = Math.floor(Math.random() * play.length);
-            const item= move[randomIndex];
-           return item;
-        }
         const move= [ "Rock", "Paper", "Scissors"];
-        const result=getComputerChoice(move);
+
+        function getComputerChoice () {
+            return move[Math.floor(Math.random() * move.length)];
+        }
+        const computerSelection=getComputerChoice();
+        const playerSelection= "rock";
         
-    function playRound( playerSelection, computerSelection){
-        computerSelection=result;
+        function playRound( playerSelection, computerSelection){
+        
         switch (playerSelection && computerSelection){ 
             case playerSelection == computerSelection: "Tie"
             break;
@@ -41,8 +41,7 @@
             break;
         }
      }
-     const playerSelection="paper"
-    const computerSelection = getComputerChoice(move);
+     
     console.log (playRound(playerSelection, computerSelection));
      </script>
 </body>
