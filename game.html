@@ -9,11 +9,12 @@
 <body>
     <script>
         const moves= [ "Rock", "Paper", "Scissors"];
-        function getComputerchoice () {
-            Math.floor (Math.random ()* moves.length);
+        function getComputerchoice (moves) {
+          return moves[Math.floor (Math.random ()* moves.length)];
         }
-
-        
+      function playerSelection (){
+     return   prompt ("Type Rock, Paper or Scissors");
+      }
      </script>
 </body>
 </html>
