@@ -8,41 +8,10 @@
 </head>
 <body>
     <script>
-        const move= [ "Rock", "Paper", "Scissors"];
+        const moves= [ "Rock", "Paper", "Scissors"];
+        
 
-        function getComputerChoice () {
-            return move[Math.floor(Math.random() * move.length)];
-        }
         
-        
-        function playRound( playerSelection, computerSelection){
-            const computerSelection=getComputerChoice(move);
-            const playerSelection= "rock";
-        switch (playerSelection , computerSelection){ 
-            case playerSelection == computerSelection: "Tie"
-            break;
-            case playerSelection.toLowerCase("Rock") && computerSelection.toLowerCase("Scissors"):
-            console.log("You win Rock beats Scissors")
-            break;
-            case playerSelection.toLowerCase("Scissors") && computerSelection.toLowerCase("Rock"):
-            console.log("You lose! Rock beats Scissors")
-            break;
-            case playerSelection.toLowerCase("Rock") && computerSelection.toLowerCase("Paper"):
-            console.log("You lose! Paper beats Rock")
-            break;
-            case playerSelection.toLowerCase("Scissors") && computerSelection.toLowerCase("Paper"):
-            console.log ("You win Scissors beat Paper")
-            break;
-            case playerSelection.toLowerCase("paper") && computerSelection.toLowerCase("rock"):
-            console.log ("You win Paper beats Rock")
-            break;
-            case playerSelection.toLowerCase("paper") && computerSelection.toLowerCase("scissors"):
-            console.log("You lose Scissors beat Paper")
-            break;
-        }
-     }
-     
-    console.log (playRound(playerSelection, computerSelection));
      </script>
 </body>
 </html>
