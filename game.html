@@ -12,15 +12,8 @@
         function getComputerchoice (moves) {
           return moves[Math.floor (Math.random ()* moves.length)];
         }
-      function playerSelection () {
-        let input= prompt("Type Rock, Paper or Scissors");
-      }
-      input=input.toLowerCase();
-      let check=validateInput(input);
-      if (check==true){
-        console.log (input);
-      }
-      
+    let playerSelection= prompt("Choose Rock, Paper or Scissors", "Rock").toLowerCase();
+     console.log(playerSelection);
      </script>
 </body>
 </html>
