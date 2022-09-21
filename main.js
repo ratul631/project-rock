@@ -1,6 +1,12 @@
 const moves= [ "Rock", "Paper", "Scissors"];
         function getComputerchoice (moves) {
-          return moves[Math.floor (Math.random ()* moves.length)];
+          return moves[Math.floor (Math.random ()* moves.length)].toLowerCase();
         }
     let playerSelection= prompt("Choose Rock, Paper or Scissors", "Rock").toLowerCase();
-     console.log(playerSelection);
+    
+    alert (playerSelection);
+    function playRound (playerSelection, getComputerchoice){
+      if (playerSelection==getComputerchoice){
+        alert ("TIe!")
+      }
+    }
