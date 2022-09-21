@@ -6,12 +6,10 @@
 function computerChoice (moves){
 return  moves[Math.floor(Math.random()*moves.length)].toLowerCase();
 }
-
-
   const playRound = (playerSelection, computerSelection)=>{
-
+console.log ("3", playerSelection, "4", computerSelection)
       if (playerSelection===computerSelection){
-        return ("Tie!");
+        return  `Tie! You both pick" ${playerSelection}`;
       }
       else if (playerSelection=="rock" , computerSelection=="scissors"){
         playerScore++
@@ -48,15 +46,16 @@ return  moves[Math.floor(Math.random()*moves.length)].toLowerCase();
     function game (){
 
     for (let i=0; i<5; i++){
+
       const computerSelection=computerChoice(moves);
       const playerSelection=prompt("Choose what to throw", "Enter").toLowerCase();
       playRound(playerSelection,computerSelection);
       }
       if (playerScore>compScore){
-      return  "You win"
+      return  "You win! Hooray!"
     }
     else if (playerScore<compScore)
-    { return "You lose"}
+    { return "You lose! Better Luck Next Time"}
     else {"You tied"}
   }
   console.log(game());
