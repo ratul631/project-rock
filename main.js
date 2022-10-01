@@ -57,3 +57,5 @@ return  moves[Math.floor(Math.random()*moves.length)].toLowerCase();
   game();
   const buttons=document.querySelectorAll('button');
   buttons.addEventListener("click",playRound);
+  const playerSelection=document.querySelectorAll('button').value;
+  console.log(playerSelection);
