@@ -45,7 +45,7 @@ return  moves[Math.floor(Math.random()*moves.length)].toLowerCase();
     function game (){
 
       const computerSelection=computerChoice(moves);
-      const playerSelection=prompt("Choose what to throw", "Enter").toLowerCase();
+      
       playRound(playerSelection,computerSelection);
       
       if (playerScore>compScore){
@@ -55,3 +55,5 @@ return  moves[Math.floor(Math.random()*moves.length)].toLowerCase();
        else {"You tied"}
   }
   game();
+  const buttons=document.querySelectorAll('button');
+  buttons.addEventListener("click",playRound);
