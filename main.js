@@ -7,7 +7,6 @@ function computerChoice (moves){
 return  moves[Math.floor(Math.random()*moves.length)].toLowerCase();
 }
   const playRound = (playerSelection, computerSelection)=>{
-console.log ("3", playerSelection, "4", computerSelection)
       if (playerSelection===computerSelection){
         return  `Tie! You both pick" ${playerSelection}`;
       }
@@ -58,4 +57,4 @@ console.log ("3", playerSelection, "4", computerSelection)
     { return "You lose! Better Luck Next Time"}
     else {"You tied"}
   }
-  console.log(game());
+  game();
