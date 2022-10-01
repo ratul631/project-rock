@@ -1,6 +1,6 @@
  let compScore=0;
  let playerScore=0;
-
+ 
  const moves= ["Rock", "Paper", "Scissors"];
   
 function computerChoice (moves){
@@ -41,21 +41,32 @@ return  moves[Math.floor(Math.random()*moves.length)].toLowerCase();
       
       }
   }
+  
     
     function game (){
 
-      const computerSelection=computerChoice(moves);
       
-      playRound(playerSelection,computerSelection);
+     
       
+      
+      
+      
+  
       if (playerScore>compScore){
       return  "You win! Hooray!"
       } else if (playerScore<compScore){
       return "You lose! Better Luck Next Time"}
        else {"You tied"}
   }
+  const computerSelection=computerChoice(moves);
+  window.addEventListener('click', function(e){
+    const button=document.querySelectorAll(`button[value="$e.value"]`);
+    
+  })
+  playRound(playerSelection,computerSelection);
+ 
+
   game();
-  const buttons=document.querySelectorAll('button');
-  buttons.addEventListener("click",playRound);
-  const playerSelection=document.querySelectorAll('button').value;
-  console.log(playerSelection);
+  
+  
+  
