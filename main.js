@@ -6,7 +6,9 @@
 function computerChoice (moves){
 return  moves[Math.floor(Math.random()*moves.length)].toLowerCase();
 }
-  const playRound = (playerSelection, computerSelection)=>{
+const computerSelection=computerChoice(moves);
+
+const playRound = (playerSelection, computerSelection)=>{
       if (playerSelection===computerSelection){
         return  `Tie! You both pick" ${playerSelection}`;
       }
@@ -45,24 +47,23 @@ return  moves[Math.floor(Math.random()*moves.length)].toLowerCase();
     
     function game (){
 
-      
-     
-      
-      
-      
-      
-  
       if (playerScore>compScore){
       return  "You win! Hooray!"
       } else if (playerScore<compScore){
       return "You lose! Better Luck Next Time"}
-       else {"You tied"}
+      else {"You tied"}
+
+    const buttons=document.querySelectorAll('button');
+    buttons.forEach((button) => {
+    buttons.addEventListener('click', () =>
+    playerSelection=buttons.value)  ;
+  } );
   }
-  const computerSelection=computerChoice(moves);
-  window.addEventListener('click', function(e){
-    const button=document.querySelectorAll(`button[value="$e.value"]`);
+  
+  console.log(playerSelection);
     
-  })
+
+  
   playRound(playerSelection,computerSelection);
  
 
