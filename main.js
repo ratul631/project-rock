@@ -44,17 +44,14 @@ return  moves[Math.floor(Math.random()*moves.length)].toLowerCase();
     
     function game (){
 
-    for (let i=0; i<5; i++){
-
       const computerSelection=computerChoice(moves);
       const playerSelection=prompt("Choose what to throw", "Enter").toLowerCase();
       playRound(playerSelection,computerSelection);
-      }
+      
       if (playerScore>compScore){
       return  "You win! Hooray!"
-    }
-    else if (playerScore<compScore)
-    { return "You lose! Better Luck Next Time"}
-    else {"You tied"}
+      } else if (playerScore<compScore){
+      return "You lose! Better Luck Next Time"}
+       else {"You tied"}
   }
   game();
