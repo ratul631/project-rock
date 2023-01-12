@@ -7,6 +7,7 @@ function computerChoice (moves){
 return  moves[Math.floor(Math.random()*moves.length)].toLowerCase();
 }
 const computerSelection=computerChoice(moves);
+let playerSelection;
 
 const playRound = (playerSelection, computerSelection)=>{
       if (playerSelection===computerSelection){
@@ -59,7 +60,6 @@ const playRound = (playerSelection, computerSelection)=>{
   } );
   }
   
-  console.log(playerSelection);
   
   playRound(playerSelection,computerSelection);
  
