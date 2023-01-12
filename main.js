@@ -44,7 +44,6 @@ const playRound = (playerSelection, computerSelection)=>{
       }
   }
   
-    
     function game (){
 
       if (playerScore>compScore){
@@ -61,12 +60,9 @@ const playRound = (playerSelection, computerSelection)=>{
   }
   
   console.log(playerSelection);
-    
-
   
   playRound(playerSelection,computerSelection);
  
-
   game();
   
   
